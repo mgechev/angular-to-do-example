@@ -16,6 +16,12 @@ export class ItemComponent {
 
   saveItem(description) {
     this.editable = false;
-    this.item.description = description;
+    // If the user clicks the save button without having entered anything in the edit input, the current item does not change and the edit input and buttons are removed
+    if (description == '') {
+      this.editable = false;
+    } else {
+      // change the description of the current item
+      this.item.description = description;
+    }
   }
 }

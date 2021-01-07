@@ -16,21 +16,21 @@
   <!-- Buttons that show all, still to do, or done items on click -->
   <div class="btn-wrapper">
     <button
-      class="btn-menu"
+      class="btn btn-menu"
       [class.active]="filter == 'all'"
       (click)="filter = 'all'">
       All
     </button>
 
     <button
-      class="btn-menu"
+      class="btn btn-menu"
       [class.active]="filter == 'active'"
       (click)="filter = 'active'">
       To Do
     </button>
 
     <button
-      class="btn-menu"
+      class="btn btn-menu"
       [class.active]="filter == 'done'"
       (click)="filter = 'done'">
       Done

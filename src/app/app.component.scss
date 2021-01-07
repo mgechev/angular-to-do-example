@@ -27,46 +27,20 @@ body {
   }
 }
 
-// non-material
-// .lg-text-input {
-//   width: 100%;
-//   padding: 1rem;
-//   border: 2px solid #000;
-//   display: block;
-//   box-sizing: border-box;
-//   font-size: 1rem;
-// }
-
-// .big-input {
-//   padding: 1rem;
-//   border: 1px solid black;
-//   box-sizing: border-box;
-// }
-
-
-// For add button without material design
-// .btn-primary {
-//   color: #fff;
-//   background-color: #000;
-//   width: 100%;
-//   padding: .75rem;
-//   font-size: 1.3rem;
-//   border: none;
-//   margin: 1rem 0;
-// }
+.lg-text-input {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid #000;
+  display: block;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
 
 .btn-wrapper {
   margin-bottom: 2rem;
-
-  // if using material
-  margin-top: 1rem;
 }
 
 .btn-menu {
-  padding: .15rem 1rem;
-  font-size: 1rem;
-
-  // menu buttons flexbox styles
   flex-basis: 32%;
 }
 
@@ -76,6 +50,7 @@ body {
 
 .active {
   color: green;
+
 }
 
 .done {
@@ -88,37 +63,3 @@ ul {
     list-style: none;
   }
 }
-
-.lg-label {
-  font-size: 1rem;
-
-  // Media query to increase font size when viewport is larger than 600px
-  @include small {
-    font-size: 1.25rem;
-  }
-
-}
-
-.mat-form-field-infix input {
-    font-size: 1.2rem;
-    box-sizing: border-box;
-}
-
-.mat-form-field-label {
-  font-size: 1.5rem;
-}
-
-// Material add button
-.mat-flat-button.mat-primary {
-  width: 100%;
-  padding: .5rem;
-  font-size: 1.3rem;
-  &:hover {
-    background-color: darken(#673ab7, 10%);
-  }
-  &:active {
-    background-color: darken(#673ab7, 15%);
-  }
-}
-
-
